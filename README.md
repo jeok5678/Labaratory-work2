@@ -22,8 +22,18 @@ E-Kahoot — це програмна система для проведення 
 ##2. UML Моделювання системи
 Усі діаграми побудовані з використанням нотації UML 2.5.
 
-2.1 Діаграма прецедентів (Use Case Diagram)
+###2.1 Діаграма прецедентів (Use Case Diagram)
 Відображає взаємодію Гравця та Організатора з функціями системи.
 
 <img width="1024" height="517" alt="telegram-cloud-photo-size-2-5433919376986936239-y" src="https://github.com/user-attachments/assets/989a8605-ade9-485d-b295-b8c65d1eb6b7" />
+
+###2.2 Діаграма класів (Class Diagram)
+Статична структура системи, що містить класи User, Quiz, GameSession та інші, із зазначенням атрибутів, методів та зв'язків.
+
+<img width="1024" height="559" alt="зображення" src="https://github.com/user-attachments/assets/accb2eb7-a436-4d4d-a815-a7728810b70a" />
+
+###2.3 Діаграма послідовності (Sequence Diagram)
+Динаміка сценарію «Відправка відповіді та нарахування балів» (FR-02).
+
+<img width="721" height="364" alt="зображення" src="https://github.com/user-attachments/assets/3eabaf2e-6d48-4b1f-9516-713c61bea0da"/>
 
