@@ -35,5 +35,4 @@ E-Kahoot — це програмна система для проведення 
 ###2.3 Діаграма послідовності (Sequence Diagram)
 Динаміка сценарію «Відправка відповіді та нарахування балів» (FR-02).
 
-<img width="721" height="364" alt="зображення" src="https://github.com/user-attachments/assets/3eabaf2e-6d48-4b1f-9516-713c61bea0da"/>
-
+<img width="1024" height="517" alt="зображення" src="https://github.com/user-attachments/assets/641134eb-1364-46ea-b2c8-f2a11c2933a9" />
