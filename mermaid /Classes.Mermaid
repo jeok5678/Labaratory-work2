@@ -1,0 +1,39 @@
+classDiagram
+    %% Наследование (Inheritance)
+    User <|-- Admin : Успадковує
+
+    %% Композиция (Composition)
+    User "1" *-- "1" Profile : Жорсткий зв'язок
+    Quiz "1" *-- "*" Question : Складається з
+    Question "1" *-- "2..*" Answer : Містить
+
+    %% Агрегация (Aggregation)
+    Fact "1" o-- "0..*" Quiz : Може включати
+
+    class User {
+        +String username
+        +String email
+    }
+    class Admin {
+        +void manageUsers()
+    }
+    class Profile {
+        +String bio
+        +String avatarUrl
+    }
+    class Fact {
+        +String content
+        +String source
+    }
+    class Quiz {
+        +String title
+        +DateTime createdAt
+    }
+    class Question {
+        +String text
+        +int points
+    }
+    class Answer {
+        +String text
+        +bool isCorrect
+    }
