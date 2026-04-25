@@ -1,0 +1,24 @@
+sequenceDiagram
+    actor G as Гравець
+    participant VF as :ВідображенняФакту
+    participant SG as :СесіяГри
+    participant GK as :ГенераторКвізів
+    participant P as :Питання
+
+    G->>VF: Закінчити читання факту(Fact_01)
+    activate VF
+    VF->>SG: сповіститиПроПрочитанняФакту(Fact_01)
+    activate SG
+    SG->>GK: ініціюватиГенераціюКвізу(Fact_01)
+    activate GK
+    GK->>P: створитиПитання()
+    activate P
+    GK->>P: заповнитиДаними(Текст, Варіанти, Правильна)
+    P-->>GK: квізГотовий(Quiz_ID)
+    deactivate P
+    GK-->>SG: квізГотовий(Quiz_ID)
+    deactivate GK
+    SG->>VF: відобразитиКвіз(Quiz_ID)
+    deactivate SG
+    VF-->>G: Показати питання квізу
+    deactivate VF
